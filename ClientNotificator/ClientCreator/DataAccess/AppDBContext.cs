@@ -18,7 +18,7 @@ namespace ClientCreator.DataAccess
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = $"Filename={PathDB.GetPath("ClientCreatorDB.db")}";
-            optionsBuilder.UseSqlite("Server=.;Database=ClientCreatorDB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlite(connectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -38,11 +38,11 @@ namespace ClientCreator.DataAccess
                 .WithMany(t => t.Clients);
 
             modelBuilder.Entity<Models.ClientContacts>()
-                .HasIndex(cc => cc.Email)
+                .HasIndex(cc => cc.EmailAddress)
                 .IsUnique();
 
             modelBuilder.Entity<Models.ClientContacts>()
-                .HasIndex(cc => cc.Phone)
+                .HasIndex(cc => cc.PhoneNumber)
                 .IsUnique();
 
             modelBuilder.Entity<Models.Training>()

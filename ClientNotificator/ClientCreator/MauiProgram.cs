@@ -1,4 +1,6 @@
 ﻿using ClientCreator.DataAccess;
+using ClientCreator.Models;
+using ClientCreator.ViewModels;
 using Microsoft.Extensions.Logging;
 
 namespace ClientCreator
@@ -22,6 +24,16 @@ namespace ClientCreator
             var dbContext = new AppDBContext();
             dbContext.Database.EnsureCreated();
             dbContext.Dispose();
+
+            builder.Services.AddTransient<Client>();
+
+            builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddSingleton<MainPageViewModel>();
+
+            builder.Services.AddTransient<CreateNewClientPage>();
+            builder.Services.AddTransient<CreateNewClientViewModel>();
+
+
 
 #if DEBUG
     		builder.Logging.AddDebug();

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClientCreator.CreateNewClientPage"
+             xmlns:viewmodel="clr-namespace:ClientCreator.ViewModels"
+             x:DataType="viewmodel:CreateNewClientViewModel"
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <!-- Кнопка создания клиента -->
+            <Button Text="Создать" Command="{Binding CreateClientCommand}" VerticalOptions="Start" HorizontalOptions="CenterAndExpand"/>
+
+            <!-- Поля для ввода данных -->
+            <Entry Placeholder="ФИО" Text="{Binding Client.PersonalInfo.FullName}" />
+            <Entry Placeholder="Номер телефона" Text="{Binding Client.Contacts.PhoneNumber}" />
+            <Entry Placeholder="Электронная почта" Text="{Binding Client.Contacts.EmailAddress}" />
+            <Entry Placeholder="Имя в телеграме" Text="{Binding Client.Contacts.TelegramName}" />
+            <Entry Placeholder="Идентификатор в телеграме" Text="{Binding Client.Contacts.TelegramName}" />
+            <DatePicker Date="{Binding Client.PersonalInfo.BirthDate}" />
+            <DatePicker Date="{Binding Client.NextVisitDate}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

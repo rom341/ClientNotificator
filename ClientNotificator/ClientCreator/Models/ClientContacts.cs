@@ -13,10 +13,10 @@ namespace ClientCreator.Models
         public int ID { get; set; }
 
         [EmailAddress]
-        public string Email { get; set; }
+        public string EmailAddress { get; set; }
 
         [Phone]
-        public string Phone { get; set; }
+        public string PhoneNumber { get; set; }
 
         public string TelegramName { get; set; }
         public int? TelegramID { get; set; }

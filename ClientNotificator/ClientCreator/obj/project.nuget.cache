@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "V4hJ2XTey7Wq0vQj5ay5EH6QvI5D3Vqwkq1o+h7LCooSS6KfZtSXnbjx2mKb4IKc7fd0z6iFFWmW+yPjjUdfzg==",
+  "dgSpecHash": "utkG5zkI43eYOyaiX4TYyDmDJ5FwfFGK+7CtStw5LOU5x8WnCKpvCnKHku5x7H/zDwUcmdhHZZPnVYt0TKdN5A==",
   "success": true,
   "projectFilePath": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\ClientCreator.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Roman\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\Roman\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Roman\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.4\\microsoft.data.sqlite.core.8.0.4.nupkg.sha512",
     "C:\\Users\\Roman\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.4\\microsoft.entityframeworkcore.8.0.4.nupkg.sha512",

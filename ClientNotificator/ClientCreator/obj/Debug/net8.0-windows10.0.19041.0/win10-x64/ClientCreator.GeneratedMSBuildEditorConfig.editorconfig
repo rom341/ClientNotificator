@@ -24,6 +24,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ClientCreator.AppShell.xam
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[D:/Git/Repos/ClientNotificator/ClientNotificator/ClientCreator/CreateNewClientPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ClientCreator.CreateNewClientPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CreateNewClientPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CreateNewClientPage.xaml
+
 [D:/Git/Repos/ClientNotificator/ClientNotificator/ClientCreator/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ClientCreator.MainPage.xaml
