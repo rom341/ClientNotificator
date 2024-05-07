@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using ClientCreator.DataAccess;
+using Microsoft.Extensions.Logging;
 
 namespace ClientCreator
 {
@@ -14,6 +15,13 @@ namespace ClientCreator
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.Services.AddDbContext<AppDBContext>();
+            builder.Services.AddTransient<MainPage>();
+
+            var dbContext = new AppDBContext();
+            dbContext.Database.EnsureCreated();
+            dbContext.Dispose();
 
 #if DEBUG
     		builder.Logging.AddDebug();
