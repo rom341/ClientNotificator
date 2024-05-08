@@ -19,6 +19,11 @@ namespace ClientCreator.Utilities
                 pathDbSqlite = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
                 pathDbSqlite = Path.Combine(pathDbSqlite, "..", "Library", nameDb);
             }
+            else if (DeviceInfo.Platform == DevicePlatform.WinUI)
+            {
+                pathDbSqlite = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+                pathDbSqlite = Path.Combine(pathDbSqlite, nameDb);
+            }
 
             return pathDbSqlite;
         }

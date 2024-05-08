@@ -17,13 +17,15 @@ namespace ClientCreator.ViewModels
         public ClientListViewModel(AppDBContext context)
         {
             Clients = new ObservableCollection<Client>();
-            LoadClients();
             _context = context;
+            LoadClients();
         }
         private void LoadClients()
         {
             Clients.Clear();
-            var clients = _context.Clients.ToList();
+            var a = _context.ClientContacts.ToList();
+            var b = _context.ClientPersonalInfo.ToList();
+            List<Client> clients = _context.Clients.ToList();
             foreach (var client in clients)
             {
                 Clients.Add(client);

@@ -2,6 +2,7 @@
 using ClientCreator.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,9 +38,9 @@ namespace ClientCreator.ViewModels
                 _context.Clients.Add(_client);
                 await _context.SaveChangesAsync();
             }
-            catch (Exception ex)
+            catch (DbUpdateException ex)
             {
-                await App.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+                await App.Current.MainPage.DisplayAlert("Error", $"{ex.Message}\n {ex.InnerException?.Message}", "OK");
             }
         }
     }

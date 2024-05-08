@@ -1,0 +1,1 @@
+D:\Git\Repos\ClientNotificator\ClientNotificator\ClientCreator\ClientCreator.csproj;x64
