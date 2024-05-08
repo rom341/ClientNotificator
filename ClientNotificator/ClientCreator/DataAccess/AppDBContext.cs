@@ -17,7 +17,7 @@ namespace ClientCreator.DataAccess
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = $"Filename={PathDB.GetPath("ClientCreatorDB.db")}";
+            string connectionString = $"Filename={PathDB.GetPath("Clients.db")}";
             optionsBuilder.UseSqlite(connectionString);
         }
 

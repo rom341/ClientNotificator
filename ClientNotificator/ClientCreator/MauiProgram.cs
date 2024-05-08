@@ -26,12 +26,18 @@ namespace ClientCreator
             dbContext.Dispose();
 
             builder.Services.AddTransient<Client>();
+            builder.Services.AddTransient<ClientContacts>();
+            builder.Services.AddTransient<ClientPersonalInfo>();
+            builder.Services.AddTransient<Training>();
 
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<MainPageViewModel>();
 
             builder.Services.AddTransient<CreateNewClientPage>();
             builder.Services.AddTransient<CreateNewClientViewModel>();
+
+            builder.Services.AddTransient<ClientListPage>();
+            builder.Services.AddTransient<ClientListViewModel>();
 
 
 

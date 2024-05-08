@@ -11,14 +11,9 @@ namespace ClientCreator.Models
     {
         [Key]
         public int ID { get; set; }
-
-        [EmailAddress]
-        public string EmailAddress { get; set; }
-
-        [Phone]
-        public string PhoneNumber { get; set; }
-
-        public string TelegramName { get; set; }
+        public string? EmailAddress { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string? TelegramName { get; set; }
         public int? TelegramID { get; set; }
         public Client Client { get; set; }
     }

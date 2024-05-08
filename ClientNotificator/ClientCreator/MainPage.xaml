@@ -1,9 +1,10 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ClientCreator.MainPage"
-             xmlns:viewmodel="clr-namespace:ClientCreator.ViewModels">
+             xmlns:viewmodel="clr-namespace:ClientCreator.ViewModels"
+             xmlns:views="clr-namespace:ClientCreator.PagesTemplates"
+             xmlns:model="clr-namespace:ClientCreator.Models">
 
-    <!-- Добавляем экземпляр ViewModel в качестве ресурса -->
     <ContentPage.Resources>
         <viewmodel:MainPageViewModel x:Key="MainPageViewModel" />
     </ContentPage.Resources>
@@ -13,11 +14,16 @@
             Padding="30,0"
             Spacing="25">
             <!-- Ваш существующий контент -->
-
+            
             <!-- Кнопка для открытия страницы создания нового клиента -->
             <Button
                 Text="Создать нового клиента"
-                Command="{Binding ShowCreateNewClientPageCommand, Source={StaticResource MainPageViewModel}}"
+                Command="{Binding ShowCreateNewClientPageCommand}"
+                HorizontalOptions="Fill" />
+            
+            <Button
+                Text="Показать список клиентов"
+                Command="{Binding ShowClientsPageCommand}"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>

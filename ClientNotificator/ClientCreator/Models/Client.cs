@@ -16,5 +16,21 @@ namespace ClientCreator.Models
         public DateTime? RegistrationDate { get; set; }
         public DateTime? NextVisitDate { get; set; }
         public ICollection<Training> Trainings { get; set; }
+
+        public Client()
+        {
+            Contacts = new ClientContacts();
+            PersonalInfo = new ClientPersonalInfo();
+            Trainings = new List<Training>();
+        }
+
+        public Client(ClientContacts contacts, ClientPersonalInfo personalInfo, DateTime? registrationDate, DateTime? nextVisitDate, ICollection<Training> trainings)
+        {
+            Contacts = contacts;
+            PersonalInfo = personalInfo;
+            RegistrationDate = registrationDate;
+            NextVisitDate = nextVisitDate;
+            Trainings = trainings;
+        }
     }
 }

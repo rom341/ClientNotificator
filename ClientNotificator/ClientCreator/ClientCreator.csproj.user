@@ -3,11 +3,18 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net8.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Google PIXEL 2 XL (Android 9.0 — API 28)</ActiveDebugProfile>
+    <ActiveDebugProfile>OnePlus NE2211 (Android 11.0 — API 30)</ActiveDebugProfile>
     <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
+    <DefaultDevice>pixel_3a_-_api_30</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="ClientListPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="CreateNewClientPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="PagesTemplates\ClientView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

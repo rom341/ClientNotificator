@@ -24,6 +24,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ClientCreator.AppShell.xam
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[D:/Git/Repos/ClientNotificator/ClientNotificator/ClientCreator/ClientListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ClientCreator.ClientListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ClientListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ClientListPage.xaml
+
 [D:/Git/Repos/ClientNotificator/ClientNotificator/ClientCreator/CreateNewClientPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ClientCreator.CreateNewClientPage.xaml
@@ -35,6 +41,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ClientCreator.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/Git/Repos/ClientNotificator/ClientNotificator/ClientCreator/PagesTemplates/ClientView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ClientCreator.PagesTemplates.ClientView.xaml
+build_metadata.AdditionalFiles.TargetPath = PagesTemplates\ClientView.xaml
+build_metadata.AdditionalFiles.RelativePath = PagesTemplates\ClientView.xaml
 
 [D:/Git/Repos/ClientNotificator/ClientNotificator/ClientCreator/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

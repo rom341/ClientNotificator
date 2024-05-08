@@ -11,7 +11,7 @@ namespace ClientCreator.Models
     {
         [Key]
         public int ID { get; set; }
-        public string FullName { get; set; }
+        public string? FullName { get; set; }
         public DateTime? BirthDate { get; set; }
         public Client Client { get; set; }
     }

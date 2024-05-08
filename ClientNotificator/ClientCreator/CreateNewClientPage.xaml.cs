@@ -1,12 +1,13 @@
 using ClientCreator.Models;
+using ClientCreator.ViewModels;
 
 namespace ClientCreator;
 
 public partial class CreateNewClientPage: ContentPage
 {
-	public CreateNewClientPage(Client client)
+	public CreateNewClientPage(CreateNewClientViewModel createNewClientViewModel)
 	{
 		InitializeComponent();
-		BindingContext = client;
+        BindingContext = createNewClientViewModel;
 	}
 }

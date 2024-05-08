@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClientCreator.ClientListPage"
+             xmlns:viewmodel="clr-namespace:ClientCreator.ViewModels"
+             xmlns:model="clr-namespace:ClientCreator.Models"
+             Title="Client List">
+    <StackLayout Padding="20">
+        <ListView ItemsSource="{Binding Clients}">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="model:Client">
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding PersonalInfo.FullName}" />
+                            <Label Text="{Binding Contacts.EmailAddress}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

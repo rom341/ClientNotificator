@@ -8,16 +8,16 @@
     <ContentPage.Content>
         <StackLayout Padding="20">
             <!-- Кнопка создания клиента -->
-            <Button Text="Создать" Command="{Binding CreateClientCommand}" VerticalOptions="Start" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnCreate" Text="Создать" Command="{Binding CreateClientCommand}" VerticalOptions="Start" HorizontalOptions="CenterAndExpand"/>
 
             <!-- Поля для ввода данных -->
-            <Entry Placeholder="ФИО" Text="{Binding Client.PersonalInfo.FullName}" />
-            <Entry Placeholder="Номер телефона" Text="{Binding Client.Contacts.PhoneNumber}" />
-            <Entry Placeholder="Электронная почта" Text="{Binding Client.Contacts.EmailAddress}" />
-            <Entry Placeholder="Имя в телеграме" Text="{Binding Client.Contacts.TelegramName}" />
-            <Entry Placeholder="Идентификатор в телеграме" Text="{Binding Client.Contacts.TelegramName}" />
-            <DatePicker Date="{Binding Client.PersonalInfo.BirthDate}" />
-            <DatePicker Date="{Binding Client.NextVisitDate}" />
+            <Entry Placeholder="ФИО" Text="{Binding Client.PersonalInfo.FullName, Mode=TwoWay}" />
+            <Entry Placeholder="Номер телефона" Text="{Binding Client.Contacts.PhoneNumber, Mode=TwoWay}" />
+            <Entry Placeholder="Электронная почта" Text="{Binding Client.Contacts.EmailAddress, Mode=TwoWay}" />
+            <Entry Placeholder="Имя в телеграме" Text="{Binding Client.Contacts.TelegramName, Mode=TwoWay}" />
+            <Entry Placeholder="Идентификатор в телеграме" Text="{Binding Client.Contacts.TelegramName, Mode=TwoWay}" />
+            <DatePicker Date="{Binding Client.PersonalInfo.BirthDate, Mode=TwoWay}" />
+            <DatePicker Date="{Binding Client.NextVisitDate, Mode=TwoWay}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

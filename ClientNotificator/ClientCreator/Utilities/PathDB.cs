@@ -9,7 +9,7 @@ namespace ClientCreator.Utilities
             string pathDbSqlite = String.Empty;
 
             if (DeviceInfo.Platform == DevicePlatform.Android)
-            {
+            {                
                 pathDbSqlite = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
                 pathDbSqlite = Path.Combine(pathDbSqlite, nameDb);
             }

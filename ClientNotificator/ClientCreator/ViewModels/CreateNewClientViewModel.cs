@@ -1,4 +1,5 @@
-﻿using ClientCreator.Models;
+﻿using ClientCreator.DataAccess;
+using ClientCreator.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System;
@@ -14,11 +15,31 @@ namespace ClientCreator.ViewModels
     {
         [ObservableProperty]
         public Client _client;
-
-        [RelayCommand]
-        public void CreateClient()
+        public CreateNewClientViewModel()
         {
             _client = new Client();
+        }
+        public CreateNewClientViewModel(Client client)
+        {
+            _client = client;
+        }
+
+        [RelayCommand]
+        async Task CreateClient()
+        {
+            try
+            {
+                _client.RegistrationDate = DateTime.Now;
+                using (var context = new AppDBContext())
+                {
+                    context.Clients.Add(_client);
+                    await context.SaveChangesAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
