@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ClientCreator.DataAccess
 {
-    internal class AppDBContext : DbContext
+    public class AppDBContext : DbContext
     {
         public DbSet<Models.Client> Clients { get; set; }
         public DbSet<Models.ClientContacts> ClientContacts { get; set; }

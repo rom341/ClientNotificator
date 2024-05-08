@@ -13,15 +13,18 @@ namespace ClientCreator.ViewModels
 {
     public partial class CreateNewClientViewModel : ObservableObject
     {
+        private readonly AppDBContext _context;
         [ObservableProperty]
         public Client _client;
-        public CreateNewClientViewModel()
+        public CreateNewClientViewModel(AppDBContext context)
         {
             _client = new Client();
+            _context = context;
         }
-        public CreateNewClientViewModel(Client client)
+        public CreateNewClientViewModel(Client client, AppDBContext context)
         {
             _client = client;
+            _context = context;
         }
 
         [RelayCommand]
@@ -30,15 +33,13 @@ namespace ClientCreator.ViewModels
             try
             {
                 _client.RegistrationDate = DateTime.Now;
-                using (var context = new AppDBContext())
-                {
-                    context.Clients.Add(_client);
-                    await context.SaveChangesAsync();
-                }
+
+                _context.Clients.Add(_client);
+                await _context.SaveChangesAsync();
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                await App.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
             }
         }
     }

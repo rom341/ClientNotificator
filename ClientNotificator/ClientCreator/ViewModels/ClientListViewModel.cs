@@ -11,23 +11,22 @@ namespace ClientCreator.ViewModels
 {
     public partial class ClientListViewModel
     {
+        private readonly AppDBContext _context;
         public ObservableCollection<Client> Clients { get; }
 
-        public ClientListViewModel()
+        public ClientListViewModel(AppDBContext context)
         {
             Clients = new ObservableCollection<Client>();
             LoadClients();
+            _context = context;
         }
         private void LoadClients()
         {
             Clients.Clear();
-            using (var context = new AppDBContext())
+            var clients = _context.Clients.ToList();
+            foreach (var client in clients)
             {
-                var clients = context.Clients.ToList();
-                foreach (var client in clients)
-                {
-                    Clients.Add(client);
-                }
+                Clients.Add(client);
             }
         }
     }
