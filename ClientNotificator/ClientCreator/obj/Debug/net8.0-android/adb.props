@@ -1,2 +1,2 @@
-AdbTarget=-s localhost:59622
+AdbTarget=-s localhost:56929
 AdbOptions=

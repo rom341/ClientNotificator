@@ -13,11 +13,11 @@ namespace ClientCreator.DataAccess
         public DbSet<Models.Client> Clients { get; set; }
         public DbSet<Models.ClientContacts> ClientContacts { get; set; }
         public DbSet<Models.ClientPersonalInfo> ClientPersonalInfo { get; set; }
-        public DbSet<Models.Training> Trainings { get; set; }
+        public DbSet<Models.Service> Trainings { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = $"Filename={PathDB.GetPath("Clients.db")}";
+            string connectionString = $"Filename={PathDB.GetPath("Clients_temp2.db")}";
             optionsBuilder.UseSqlite(connectionString);
         }
 
@@ -34,7 +34,7 @@ namespace ClientCreator.DataAccess
                 .HasForeignKey<Models.ClientPersonalInfo>(pi => pi.ID);
 
             modelBuilder.Entity<Models.Client>()
-                .HasMany(c => c.Trainings)
+                .HasMany(c => c.SubscribedServices)
                 .WithMany(t => t.Clients);
 
             modelBuilder.Entity<Models.ClientContacts>()
@@ -45,7 +45,7 @@ namespace ClientCreator.DataAccess
                 .HasIndex(cc => cc.PhoneNumber)
                 .IsUnique();
 
-            modelBuilder.Entity<Models.Training>()
+            modelBuilder.Entity<Models.Service>()
                 .HasIndex(t => t.Name)
                 .IsUnique();
         }

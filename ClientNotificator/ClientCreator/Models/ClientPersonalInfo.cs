@@ -14,5 +14,11 @@ namespace ClientCreator.Models
         public string? FullName { get; set; }
         public DateTime? BirthDate { get; set; }
         public Client Client { get; set; }
+
+        public ClientPersonalInfo()
+        {
+            FullName = "";
+            BirthDate = null;
+        }
     }
 }

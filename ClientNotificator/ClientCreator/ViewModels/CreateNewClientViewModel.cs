@@ -33,14 +33,26 @@ namespace ClientCreator.ViewModels
         {
             try
             {
-                _client.RegistrationDate = DateTime.Now;
+                updateOtherClientData();
 
                 _context.Clients.Add(_client);
                 await _context.SaveChangesAsync();
+
+                await Shell.Current.GoToAsync($"///{nameof(MainPage)}");
             }
             catch (DbUpdateException ex)
             {
                 await App.Current.MainPage.DisplayAlert("Error", $"{ex.Message}\n {ex.InnerException?.Message}", "OK");
+            }
+        }
+
+        private void updateOtherClientData()
+        {
+            _client.RegistrationDate = DateTime.Now;
+            _client.lastEditDate = DateTime.Now;
+            if (_client.NextVisitDate.HasValue)
+            {
+                _client.VisitList.Add(_client.NextVisitDate.Value);
             }
         }
     }

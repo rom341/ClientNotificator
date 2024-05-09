@@ -28,7 +28,7 @@ namespace ClientCreator
             builder.Services.AddTransient<Client>();
             builder.Services.AddTransient<ClientContacts>();
             builder.Services.AddTransient<ClientPersonalInfo>();
-            builder.Services.AddTransient<Training>();
+            builder.Services.AddTransient<Service>();
 
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<MainPageViewModel>();

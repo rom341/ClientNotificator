@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClientCreator.Models
+namespace Migrator.Models
 {
-    public class Training
+    public class Service
     {
         [Key]
         public int ID { get; set; }

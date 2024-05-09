@@ -6,14 +6,24 @@
              xmlns:model="clr-namespace:ClientCreator.Models"
              Title="Client List">
     <StackLayout Padding="20">
-        <ListView ItemsSource="{Binding Clients}">
+        <ListView x:Name="ClientListView" ItemsSource="{Binding Clients}">
             <ListView.ItemTemplate>
-                <DataTemplate x:DataType="model:Client">
+                <DataTemplate>
                     <ViewCell>
-                        <StackLayout>
-                            <Label Text="{Binding PersonalInfo.FullName}" />
-                            <Label Text="{Binding Contacts.EmailAddress}" />
-                        </StackLayout>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding PersonalInfo.FullName}" FontAttributes="Bold"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="{Binding Contacts.PhoneNumber}" FontAttributes="Bold"/>
+                            
+                        </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
