@@ -13,9 +13,7 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <!-- Ваш существующий контент -->
             
-            <!-- Кнопка для открытия страницы создания нового клиента -->
             <Button
                 Text="Создать нового клиента"
                 Command="{Binding ShowCreateNewClientPageCommand}"

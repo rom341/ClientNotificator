@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClientCreator.CreateNewClientPage"
+             xmlns:viewmodel="clr-namespace:ClientCreator.ViewModels"
+             x:DataType="viewmodel:EditClientViewModel"
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+
+            <!-- Поля для ввода данных -->
+            <Grid RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" x:Name="btnCreate" Text="Сохранить" Command="{Binding SaveClientCommand}" VerticalOptions="Start" HorizontalOptions="FillAndExpand"/>
+                
+                <Entry Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Placeholder="ФИО" Text="{Binding Client.PersonalInfo.FullName, Mode=TwoWay}" />
+                <Entry Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Placeholder="Номер телефона" Text="{Binding Client.Contacts.PhoneNumber, Mode=TwoWay}" />
+                <Entry Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Placeholder="Электронная почта" Text="{Binding Client.Contacts.EmailAddress, Mode=TwoWay}" />
+                <Entry Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Placeholder="Логин телеграм" Text="{Binding Client.Contacts.TelegramName, Mode=TwoWay}" />
+
+
+                <Label Grid.Row="5" Grid.Column="0" Text=" Дата рождения" />
+                <DatePicker Grid.Row="5" Grid.Column="1" Date="{Binding Client.PersonalInfo.BirthDate, Mode=TwoWay}" />
+
+                <Label Grid.Row="6" Grid.Column="0" Text=" Дата следующего визита" />
+                <DatePicker Grid.Row="6" Grid.Column="1" Date="{Binding Client.NextVisitDate, Mode=TwoWay}" />
+
+                <Frame Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Black" Padding="0">
+                    <Frame Margin="2">
+                        <Editor  Placeholder="Заметки" Text="{Binding Client.Notes, Mode=TwoWay}" HeightRequest="200"/>
+                    </Frame>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

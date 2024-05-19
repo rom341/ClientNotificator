@@ -4,29 +4,55 @@
              x:Class="ClientCreator.ClientListPage"
              xmlns:viewmodel="clr-namespace:ClientCreator.ViewModels"
              xmlns:model="clr-namespace:ClientCreator.Models"
-             Title="Client List">
-    <StackLayout Padding="20">
-        <ListView x:Name="ClientListView" ItemsSource="{Binding Clients}">
-            <ListView.ItemTemplate>
+             Title="Clients">
+
+    <ContentPage.Content>
+        <CollectionView ItemsSource="{Binding Clients}">
+            <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <Grid>
+                    <Frame Padding="10" Margin="5" BorderColor="LightGray" CornerRadius="10" HasShadow="True">
+                        <Grid RowSpacing="10">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="0.2*"/>
                             </Grid.ColumnDefinitions>
 
-                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding PersonalInfo.FullName}" FontAttributes="Bold"/>
-                            <Label Grid.Row="1" Grid.Column="0" Text="{Binding Contacts.PhoneNumber}" FontAttributes="Bold"/>
-                            
+                            <!--Содержимое-->
+                            <Grid Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" RowSpacing="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding PersonalInfo.FullName}" FontSize="18" FontAttributes="Bold" />
+                                <Label Grid.Row="0" Grid.Column="2" Text="{Binding Contacts.PhoneNumber}" FontSize="14" />
+                                <Label Grid.Row="1" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="1" Text="{Binding Notes}" FontSize="14" />
+                            </Grid>
+
+                            <!--Кнопки-->
+                            <Button Grid.Row="0" Grid.Column="1" Text="Изменить" 
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ClientListViewModel}}, Path=EditClientCommand}"
+                                    CommandParameter="{Binding .}"
+                                    BackgroundColor="LightBlue" />
+
+                            <Button Grid.Row="1" Grid.Column="1" Text="Удалить" 
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ClientListViewModel}}, Path=DeleteClientCommand}"
+                                    CommandParameter="{Binding .}"
+                                    BackgroundColor="LightCoral" />
                         </Grid>
-                    </ViewCell>
+                    </Frame>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ContentPage.Content>
 </ContentPage>

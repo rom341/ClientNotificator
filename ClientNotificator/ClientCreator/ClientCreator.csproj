@@ -70,8 +70,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="CreateNewClientPage.xaml.cs">
-	    <DependentUpon>CreateNewClientPage.xaml</DependentUpon>
+	  <Compile Update="EditClientPage.xaml.cs">
+	    <DependentUpon>EditClientPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -79,7 +79,7 @@
 	  <MauiXaml Update="ClientListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="CreateNewClientPage.xaml">
+	  <MauiXaml Update="EditClientPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PagesTemplates\ClientView.xaml">

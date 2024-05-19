@@ -34,7 +34,7 @@ namespace ClientCreator
             builder.Services.AddSingleton<MainPageViewModel>();
 
             builder.Services.AddTransient<CreateNewClientPage>();
-            builder.Services.AddTransient<CreateNewClientViewModel>();
+            builder.Services.AddTransient<EditClientViewModel>();
 
             builder.Services.AddTransient<ClientListPage>();
             builder.Services.AddTransient<ClientListViewModel>();
