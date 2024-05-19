@@ -1,2 +1,153 @@
 *.apk
 bin/
+
+# Базовые файлы и папки, которые нужно игнорировать для всех проектов .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vscode/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# Пользовательские файлы и папки Visual Studio
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Настройки Rider
+.idea/
+
+# Временные файлы, генерируемые VS
+~$*
+*.tmp
+*.temp
+
+# Сборки
+*.o
+*.a
+*.lib
+*.ncb
+*.sdf
+*.suo
+*.unsuccessfulbuild
+*.ipch
+*.aps
+*.pch
+*.ilk
+*.obj
+*.iobj
+*.pdb
+*.idb
+*.ipdb
+*.tlog
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# C++ CMake
+CMakeLists.txt.user
+
+# Сборки Silverlight
+*.xap
+*.xapp
+*.mspx
+*.wdp
+
+# Папки публикации
+publish/
+
+# Логи NuGet
+.nuget/packages/
+.nuget/fallbackfolders/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Тесты, результаты тестов
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+*.opencover.xml
+*.coverage.info
+*.sonarqube.out
+.TestResult/
+
+# Xamarin/Mobile специфичные
+*.apk
+*.ap_
+*.dex
+*.apk
+*.aab
+*.ipa
+*.app
+*.xcuserstate
+*.xcworkspace
+xcuserdata/
+*.mdb
+*.psp
+*.spf
+*.ios
+*.dSYM
+# Android специфика
+.DS_Store
+.idea
+*.iml
+.idea/
+.gradle/
+local.properties
+.gradle/
+*/build/
+!gradle-wrapper.jar
+
+# Entity Framework
+migrations/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# JetBrains Rider
+.idea/
+
+# Работа с контейнерами
+Dockerfile
+.dockerignore
+docker-compose.yml
+docker-compose.override.yml
+.env
+.env.*
+
+# .NET MAUI
+platforms/android/.cxx/
+platforms/android/build/
+platforms/ios/obj/
+platforms/ios/bin/
+
+# Visual Studio Code
+.vscode/
+
+# Временные файлы операционной системы
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.stackdump
+*.swp
+*~
