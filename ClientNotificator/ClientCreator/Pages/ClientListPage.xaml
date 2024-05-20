@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClientCreator.ClientListPage"
+             xmlns:viewmodel="clr-namespace:ClientCreator.ViewModels"
+             xmlns:model="clr-namespace:ClientCreator.Models"
+             Title="Clients">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <CollectionView ItemsSource="{Binding Clients}" 
+                            SelectionMode="Single"
+                            SelectedItem="{Binding SelectedClient}"
+                            SelectionChangedCommand="{Binding SelectClientCommand}">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="10" Margin="5" BorderColor="LightGray" CornerRadius="10" HasShadow="True">
+                            <Grid RowSpacing="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="0.2*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Содержимое -->
+                                <Grid Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" RowSpacing="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding PersonalInfo.FullName}" FontSize="18" FontAttributes="Bold" />
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Contacts.PhoneNumber}" FontSize="14" />
+                                    <Label Grid.Row="1" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="1" Text="{Binding Notes}" FontSize="14" />
+                                </Grid>
+
+                                <!-- Кнопки -->
+                                <Button Grid.Row="0" Grid.Column="1" Text="Изменить" 
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ClientListViewModel}}, Path=EditClientCommand}"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="LightBlue" />
+
+                                <Button Grid.Row="1" Grid.Column="1" Text="Удалить" 
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ClientListViewModel}}, Path=DeleteClientCommand}"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="LightCoral" />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

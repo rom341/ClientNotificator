@@ -7,28 +7,16 @@
       "RelativeMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|solutionrelative:clientcreator\\viewmodels\\clientlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|d:\\git\\repos\\clientnotificator\\clientnotificator\\clientcreator\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|solutionrelative:clientcreator\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|d:\\git\\repos\\clientnotificator\\clientnotificator\\clientcreator\\viewmodels\\clientdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|solutionrelative:clientcreator\\viewmodels\\clientdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|d:\\git\\repos\\clientnotificator\\clientnotificator\\clientcreator\\viewmodels\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|solutionrelative:clientcreator\\viewmodels\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|d:\\git\\repos\\clientnotificator\\clientnotificator\\clientcreator\\editclientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|solutionrelative:clientcreator\\editclientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|d:\\git\\repos\\clientnotificator\\clientnotificator\\clientcreator\\pages\\clientdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|solutionrelative:clientcreator\\pages\\clientdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|d:\\git\\repos\\clientnotificator\\clientnotificator\\clientcreator\\viewmodels\\editclientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|solutionrelative:clientcreator\\viewmodels\\editclientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|d:\\git\\repos\\clientnotificator\\clientnotificator\\clientcreator\\clientlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|solutionrelative:clientcreator\\clientlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|d:\\git\\repos\\clientnotificator\\clientnotificator\\clientcreator\\editclientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31EC1F52-674C-4695-869C-7EC1BC228D92}|ClientCreator\\ClientCreator.csproj|solutionrelative:clientcreator\\editclientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,86 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Client.cs",
-              "DocumentMoniker": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "ClientCreator\\Models\\Client.cs",
-              "ToolTip": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\Models\\Client.cs",
-              "RelativeToolTip": "ClientCreator\\Models\\Client.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAA1wBwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T20:48:42.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EditClientPage.xaml",
-              "DocumentMoniker": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\EditClientPage.xaml",
-              "RelativeDocumentMoniker": "ClientCreator\\EditClientPage.xaml",
-              "ToolTip": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\EditClientPage.xaml",
-              "RelativeToolTip": "ClientCreator\\EditClientPage.xaml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAABsAAABrAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-19T20:47:49.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EditClientPage.xaml.cs",
-              "DocumentMoniker": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\EditClientPage.xaml.cs",
-              "RelativeDocumentMoniker": "ClientCreator\\EditClientPage.xaml.cs",
-              "ToolTip": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\EditClientPage.xaml.cs",
-              "RelativeToolTip": "ClientCreator\\EditClientPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T20:41:18.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainPageViewModel.cs",
-              "DocumentMoniker": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\ViewModels\\MainPageViewModel.cs",
-              "RelativeDocumentMoniker": "ClientCreator\\ViewModels\\MainPageViewModel.cs",
-              "ToolTip": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\ViewModels\\MainPageViewModel.cs",
-              "RelativeToolTip": "ClientCreator\\ViewModels\\MainPageViewModel.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAYwB4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T20:21:19.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EditClientViewModel.cs",
-              "DocumentMoniker": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\ViewModels\\EditClientViewModel.cs",
-              "RelativeDocumentMoniker": "ClientCreator\\ViewModels\\EditClientViewModel.cs",
-              "ToolTip": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\ViewModels\\EditClientViewModel.cs",
-              "RelativeToolTip": "ClientCreator\\ViewModels\\EditClientViewModel.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAgwC4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T19:23:20.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClientListPage.xaml",
-              "DocumentMoniker": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\ClientListPage.xaml",
-              "RelativeDocumentMoniker": "ClientCreator\\ClientListPage.xaml",
-              "ToolTip": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\ClientListPage.xaml",
-              "RelativeToolTip": "ClientCreator\\ClientListPage.xaml",
-              "ViewState": "AQIAACAAAAAAAAAAAAAkwC8AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-09T16:21:15.629Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -126,9 +36,48 @@
               "RelativeDocumentMoniker": "ClientCreator\\ViewModels\\ClientListViewModel.cs",
               "ToolTip": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\ViewModels\\ClientListViewModel.cs",
               "RelativeToolTip": "ClientCreator\\ViewModels\\ClientListViewModel.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwCQAAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T15:12:18.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientDetailViewModel.cs",
+              "DocumentMoniker": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\ViewModels\\ClientDetailViewModel.cs",
+              "RelativeDocumentMoniker": "ClientCreator\\ViewModels\\ClientDetailViewModel.cs",
+              "ToolTip": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\ViewModels\\ClientDetailViewModel.cs",
+              "RelativeToolTip": "ClientCreator\\ViewModels\\ClientDetailViewModel.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAUwB8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T16:18:44.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientDetailPage.xaml",
+              "DocumentMoniker": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\Pages\\ClientDetailPage.xaml",
+              "RelativeDocumentMoniker": "ClientCreator\\Pages\\ClientDetailPage.xaml",
+              "ToolTip": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\Pages\\ClientDetailPage.xaml",
+              "RelativeToolTip": "ClientCreator\\Pages\\ClientDetailPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-20T16:18:00.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditClientViewModel.cs",
+              "DocumentMoniker": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\ViewModels\\EditClientViewModel.cs",
+              "RelativeDocumentMoniker": "ClientCreator\\ViewModels\\EditClientViewModel.cs",
+              "ToolTip": "D:\\Git\\Repos\\ClientNotificator\\ClientNotificator\\ClientCreator\\ViewModels\\EditClientViewModel.cs",
+              "RelativeToolTip": "ClientCreator\\ViewModels\\EditClientViewModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAwwAkAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T19:23:20.357Z",
               "EditorCaption": ""
             }
           ]

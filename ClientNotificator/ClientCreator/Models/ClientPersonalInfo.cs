@@ -18,7 +18,7 @@ namespace ClientCreator.Models
         public ClientPersonalInfo()
         {
             FullName = "";
-            BirthDate = null;
+            BirthDate = DateTime.Now;
         }
     }
 }

@@ -11,10 +11,13 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="ClientListPage.xaml">
+    <MauiXaml Update="Pages\ClientDetailPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="EditClientPage.xaml">
+    <MauiXaml Update="Pages\ClientListPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Pages\EditClientPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="PagesTemplates\ClientView.xaml">
@@ -26,9 +29,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Update="AppShell.xaml">
-      <SubType>Designer</SubType>
-    </None>
-    <None Update="MainPage.xaml">
       <SubType>Designer</SubType>
     </None>
     <None Update="Platforms\Windows\App.xaml">

@@ -20,7 +20,7 @@ namespace ClientCreator.ViewModels
             _context = context;
         }
 
-        public EditClientViewModel(Client client, AppDBContext context)
+        public EditClientViewModel(AppDBContext context, Client client)
         {
             _client = client;
             _context = context;

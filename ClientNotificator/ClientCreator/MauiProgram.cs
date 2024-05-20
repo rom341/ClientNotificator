@@ -1,5 +1,6 @@
 ﻿using ClientCreator.DataAccess;
 using ClientCreator.Models;
+using ClientCreator.Pages;
 using ClientCreator.ViewModels;
 using Microsoft.Extensions.Logging;
 
@@ -38,6 +39,9 @@ namespace ClientCreator
 
             builder.Services.AddTransient<ClientListPage>();
             builder.Services.AddTransient<ClientListViewModel>();
+            
+            builder.Services.AddTransient<ClientDetailPage>();
+            builder.Services.AddTransient<ClientDetailViewModel>();
 
 
 

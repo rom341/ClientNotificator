@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClientCreator.Pages.ClientDetailPage"
+             xmlns:viewmodel="clr-namespace:ClientCreator.ViewModels"
+             Title="ClientDetailPage">
+
+    <VerticalStackLayout Padding="10">
+        <Label Text="Client Details" FontSize="Large" HorizontalOptions="Center" />
+        <Label Text="Full Name:" FontSize="Medium" />
+        <Label Text="{Binding Client.PersonalInfo.FullName}" FontSize="Medium" />
+        <Label Text="Email:" FontSize="Medium" />
+        <Label Text="{Binding Client.Contacts.EmailAddress}" FontSize="Medium" />
+        <Label Text="Phone Number:" FontSize="Medium" />
+        <Label Text="{Binding Client.Contacts.PhoneNumber}" FontSize="Medium" />
+        <Label Text="Notes:" FontSize="Medium" />
+        <Label Text="{Binding Client.Notes}" FontSize="Medium" />
+        <Label Text="Registration Date:" FontSize="Medium" />
+        <Label Text="{Binding Client.RegistrationDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="Medium" />
+        <Label Text="Last Edit Date:" FontSize="Medium" />
+        <Label Text="{Binding Client.lastEditDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="Medium" />
+        <Label Text="Next Visit Date:" FontSize="Medium" />
+        <Label Text="{Binding Client.NextVisitDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="Medium" />
+        <Label Text="Subscribed Services:" FontSize="Medium" />
+        <CollectionView ItemsSource="{Binding Client.SubscribedServices}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding Name}" FontSize="Medium" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

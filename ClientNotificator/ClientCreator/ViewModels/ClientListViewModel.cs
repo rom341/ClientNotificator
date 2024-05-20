@@ -1,5 +1,6 @@
 ﻿using ClientCreator.DataAccess;
 using ClientCreator.Models;
+using ClientCreator.Pages;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,9 @@ namespace ClientCreator.ViewModels
     {
         private readonly AppDBContext _context;
         public ObservableCollection<Client> Clients { get; }
+
+        [ObservableProperty]
+        public Client selectedClient;
 
         public ClientListViewModel(AppDBContext context)
         {
@@ -45,7 +49,27 @@ namespace ClientCreator.ViewModels
                 App.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
             }
         }
-        
+
+        [RelayCommand]
+        async Task SelectClient()
+        {
+            try
+            {
+                string destination = $"{nameof(ClientDetailPage)}";
+                var data = new Dictionary<string, Object>
+                {
+                    [nameof(Client)] = selectedClient
+                };
+
+                await Shell.Current.GoToAsync(destination, data);
+            }
+            catch (Exception ex)
+            {
+                await App.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+            }
+        }
+
+
         [RelayCommand]
         async Task EditClient(Client clientToEdit)
         {

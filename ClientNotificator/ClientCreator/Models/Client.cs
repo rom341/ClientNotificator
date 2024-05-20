@@ -24,8 +24,8 @@ namespace ClientCreator.Models
         {
             PersonalInfo = new ClientPersonalInfo();
             Contacts = new ClientContacts();
-            SubscribedServices = new List<Service>();
             VisitList = new List<DateTime>();
+            SubscribedServices = new List<Service>();
         }
     }
 }
